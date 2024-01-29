@@ -60,3 +60,17 @@
 4、编译QT程序
   可通过命令行编译，执行QT库路径下的bin目录下的qmake ：qmake yourproject.pro
   可通过qt creator编译，需在当前环境变量设置完毕终端下执行qt软件，/.../.../creator,随后配置kit,qmake等。参考：https://blog.csdn.net/bhniunan/article/details/104307522
+5、QT环境配置
+  #!/bin/sh
+#QT config
+export QT_ROOT=/usr/local/arm-qt5.12.9-gl
+export QT_QPA_PLATFORM_PLUGIN_PATH=$QT_ROOT/plugins
+export QT_QPA_PLATFORM=eglfs
+export QT_PLUGIN_PATH=$QT_ROOT/plugins
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$QT_ROOT/lib:$QT_ROOT/plugins/platforms
+export QML2_IMPORT_PATH=$QT_ROOT/qml
+export QT_QPA_EGLFS_DEPTH=16
+export QT_QPA_EGLFS_INTEGRATION=eglfs_viv
+export QT_QPA_EGLFS_FB=/dev/fb0
+export QT_QPA_FONTDIR=/usr/share/fonts/ttf
+export QT_DEBUG_PLUGINS=1
