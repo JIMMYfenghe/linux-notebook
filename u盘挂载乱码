@@ -1,2 +1,5 @@
+
 1、令内核支持挂载U盘格式支持中文
 参考：http://news.eeworld.com.cn/mcu/ic542865.html
+2、指定格式或编码挂载
+mount -t vfat -o iocharset=utf8 /dev/sda4 /mnt/
