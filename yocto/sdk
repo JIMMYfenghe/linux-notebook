@@ -74,3 +74,7 @@
   export QT_QPA_EGLFS_FB=/dev/fb0
   export QT_QPA_FONTDIR=/usr/share/fonts/ttf
   export QT_DEBUG_PLUGINS=1
+6、命令行长命令输入重叠
+  在/etc/profile输入以下设置
+  stty columns 200
+  stty rows  100
