@@ -1,0 +1,4 @@
+1、构建yocto镜像
+  bitbake image-name
+2、生成SDK工具链
+  bitbake image-name -c populate_sdk
