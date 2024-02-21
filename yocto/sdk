@@ -1,5 +1,4 @@
 1、安装SDK
-  生成SDK：进入yocto构建目录执行:bitbake xxx-image -c populate_sdk
   进入sdk目录，执行以下命令安装。
   cmd: ./fsl-imx-fb-glibc-x86_64-fsl-image-validation-imx-cortexa9hf-neon-toolchain-4.14-sumo.sh
   选择安装目录，建议安装在用户目录，权限比较好。
