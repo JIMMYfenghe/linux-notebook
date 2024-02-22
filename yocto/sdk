@@ -48,6 +48,7 @@
     -no-iconv \
     -no-glib \
     -no-icu \
+    -no-harfbuzz \
     -make examples \
     -nomake tests \
     -no-xcb \
