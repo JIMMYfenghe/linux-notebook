@@ -2,3 +2,6 @@
   bitbake image-name
 2、生成SDK工具链
   bitbake image-name -c populate_sdk
+
+3、包命令工具
+  oe-pkgdata-util   例如oe-pkgdata-util find-path "*/bin/locale*" 查询该文件的所在包名
