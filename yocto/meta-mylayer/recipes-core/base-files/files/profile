@@ -32,5 +32,17 @@ export PATH PS1 OPIEDIR QPEDIR QTDIR EDITOR TERM
 
 alias ls='ls --color=auto'
 
+#QT config
+export QT_ROOT=/usr/local/arm-qt5.12.9-gl
+export QT_QPA_PLATFORM_PLUGIN_PATH=$QT_ROOT/plugins
+export QT_QPA_PLATFORM=eglfs
+export QT_PLUGIN_PATH=$QT_ROOT/plugins
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$QT_ROOT/lib:$QT_ROOT/plugins/platforms
+export QML2_IMPORT_PATH=$QT_ROOT/qml
+export QT_QPA_EGLFS_DEPTH=16
+export QT_QPA_EGLFS_INTEGRATION=eglfs_viv
+export QT_QPA_EGLFS_FB=/dev/fb0
+export QT_QPA_FONTDIR=/usr/share/fonts/ttf
+
 umask 022
 
